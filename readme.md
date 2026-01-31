@@ -18,7 +18,7 @@
 
 ## langgraph结构
 
-<img src="/Users/wynn/Code/wynn-ai-interview/img/ai_interview_graph.png" alt="ai_interview_graph" style="zoom:10%;" />
+<img src="img/ai_interview_graph.png" />
 
 1. **初始化节点** (`init_interview`)：解析简历，计划考点和题型。
 
