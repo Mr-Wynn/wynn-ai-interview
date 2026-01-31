@@ -162,7 +162,7 @@ async def answer_question(req: AnswerQuestionRequest):
         raise HTTPException(status_code=404, detail="面试状态不存在")
    
     db_service.update_session_status(req.session_id, int(time.time()), "in_progress")
-    # 3. 转换数据库数据到InterviewState（反序列化JSON字段）
+    # 3. 转换数据库数据到InterviewState
     deserialize = db_service.deserialize_json
     current_state: InterviewState = {
         "session_id": latest_state["session_id"],
